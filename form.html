@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleTextme.css">
+    <title>Text Me</title>
+</head>
+<body>
+    <div id="loading">Loading...</div>
+    <div class="container">
+        <h1 align="center">Let's Talk</h1>
+        <div class="form_box">
+            <form   action="https://formspree.io/f/mzzppvrg"
+            method="POST">
+                <input type="text" placeholder="Enter Your Name" id="Name" name="Name" required>
+                <input type="email" name="Email" id="Email" placeholder="Enter Your Email" required>
+                <input type="number" name="Phone" id="Phone" maxlength="10" placeholder="Enter Your Number" required>
+                <select name="Reason" id="Reason" required onchange="toggleCustomProjectTextarea()">
+                    <option value="" disabled selected>Select a project</option>
+                    <option value="Face Recognition and Smart Recognition">Face Recognition and Smart Recognition</option>
+                    <option value="Emotion Detection and Application">Emotion Detection and Application</option>
+                    <option value="Ear Detection and Application">Ear Detection and Application</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div id="customProjectContainer" style="display:none;">
+                    <textarea name="CustomProject" id="CustomProject" cols="50" rows="5" placeholder="Describe your custom project"></textarea>
+                </div>
+                <button id="btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="script_form.js"></script>
+</body>
+</html>
