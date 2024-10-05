@@ -30,6 +30,7 @@ main {
     padding: 20px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
     animation: fadeIn 2s ease-in forwards;
 }
 
@@ -61,11 +62,13 @@ main {
 .card h2 {
     margin: 20px 0 10px;
     color: #19135C; /* Dark blue */
+    font-size: 1.5em;
 }
 
 .card p {
     padding: 0 20px 20px;
     color: #539BE0; /* Light blue */
+    font-size: 1em;
 }
 
 .card:hover {
